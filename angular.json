@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "playground-demo": {
+    "autocomplete-demo": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/playground-demo",
+            "outputPath": "dist/autocomplete-demo",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "playground-demo:build:production"
+              "buildTarget": "autocomplete-demo:build:production"
             },
             "development": {
-              "buildTarget": "playground-demo:build:development"
+              "buildTarget": "autocomplete-demo:build:development"
             }
           },
           "defaultConfiguration": "development"
